@@ -1,16 +1,23 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
 /* Start Box */
 .d-flex {
   display: flex;
-}
-.d-flex-col {
-  display: flex;
-  flex-direction: column;
 }
 .align-items {
   align-items: center;
 }
 .d-block {
   display: block;
+}
+.w-full {
+  width: 100%;
 }
 /* End Box */
 /* Start Font */
@@ -23,13 +30,16 @@
 .txt-c {
   text-align: center;
 }
-.c-black {
-  color: black;
-}
 /* End Font */
 /* Start Padding + Margin */
+.p-5 {
+  padding: 5px;
+}
 .p-10 {
   padding: 10px;
+}
+.p-15 {
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -37,22 +47,50 @@
 .pb-20 {
   padding-bottom: 20px;
 }
+.m-5 {
+  margin: 5px;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.ml-5 {
+  margin-left: 5pc;
+}
 .m-10 {
   margin: 10px;
 }
 .mt-10 {
   margin-top: 10px;
 }
-
 .mr-10 {
   margin-right: 10px;
 }
-
 .mb-10 {
   margin-bottom: 10px;
 }
+.ml-10 {
+  margin-left: 10px;
+}
+.m-20 {
+  margin: 20px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
 .mb-20 {
   margin-bottom: 20px;
+}
+.ml-20 {
+  margin-left: 20px;
 }
 .mb-40 {
   margin-bottom: 40px;
@@ -77,8 +115,50 @@
   position: absolute;
 }
 /* End Position */
-/* Start Background */
-.bg-white {
-  background-color: #fff;
+/* Start Color */
+.c-black {
+  color: black;
 }
-/* End Background */
+.c-white {
+  color: white;
+}
+.c-grey {
+  color: var(--grey-color);
+}
+.c-red {
+  color: var(--red-color);
+}
+.c-green {
+  color: var(--green-color);
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.bg-red {
+  background-color: var(--red-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
+.bg-blue {
+  background-color: var(--blue-color);
+}
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-white {
+  background-color: white;
+}
+.bg-eee {
+  background-color: #eee;
+}
+/* Start Components */
+.between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* End Components */

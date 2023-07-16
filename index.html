@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800;900&display=swap"
       rel="stylesheet"
     />
     <title>Dashboard</title>
   </head>
-  <body>
+  <body class="bg-eee">
     <div class="page d-flex">
-      <div class="sidebar bg-white p-20">
+      <div class="sidebar bg-white p-20 p-relative">
         <h3 class="p-relative txt-c mb-40">Sharqy</h3>
         <ul>
           <li>
@@ -30,21 +30,21 @@
           <li>
             <a
               class="d-flex align-items p-10 c-black mb-10 rad-6 fs-14"
-              href="index.html"
+              href="Settings.html"
               ><i class="fa-solid fa-gear mr-10"></i><span>Settings</span></a
             >
           </li>
           <li>
             <a
               class="d-flex align-items p-10 c-black mb-10 rad-6 fs-14"
-              href="index.html"
+              href="Profile.html"
               ><i class="fa-solid fa-user mr-10"></i><span>Profile</span></a
             >
           </li>
           <li>
             <a
               class="d-flex align-items p-10 c-black mb-10 rad-6 fs-14"
-              href="index.html"
+              href="Projects.html"
               ><i class="fa-solid fa-share-nodes mr-10"></i
               ><span>Projects</span></a
             >
@@ -52,7 +52,7 @@
           <li>
             <a
               class="d-flex align-items p-10 c-black mb-10 rad-6 fs-14"
-              href="index.html"
+              href="Courses.html"
               ><i class="fa-solid fa-graduation-cap mr-10"></i
               ><span>Courses</span></a
             >
@@ -60,7 +60,7 @@
           <li>
             <a
               class="d-flex align-items p-10 c-black mb-10 rad-6 fs-14"
-              href="index.html"
+              href="Friends.html"
               ><i class="fa-solid fa-user-group mr-10"></i
               ><span>Friends</span></a
             >
@@ -68,20 +68,37 @@
           <li>
             <a
               class="d-flex align-items p-10 c-black mb-10 rad-6 fs-14"
-              href="index.html"
+              href="Files.html"
               ><i class="fa-solid fa-file mr-10"></i><span>Files</span></a
             >
           </li>
           <li>
             <a
               class="d-flex align-items p-10 c-black mb-10 rad-6 fs-14"
-              href="index.html"
+              href="Plans.html"
               ><i class="fa-solid fa-paperclip mr-10"></i><span>Plans</span></a
             >
           </li>
         </ul>
       </div>
-      <div class="content"></div>
+      <div class="content w-full">
+        <div class="head between-flex bg-white p-15">
+          <div class="search p-relative">
+            <input
+              class="p-10 rad-10 ml-5"
+              type="text"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="info between-flex">
+            <span class="notifications p-relative p-10"
+              ><i class="fa-regular fa-bell fa-lg"></i
+            ></span>
+
+            <img src="./images/5556468.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
