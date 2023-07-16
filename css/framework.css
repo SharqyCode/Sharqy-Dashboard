@@ -14,6 +14,9 @@
 }
 /* End Box */
 /* Start Font */
+.fs-14 {
+  font-size: 14px;
+}
 .fs-24 {
   font-size: 24px;
 }
@@ -31,6 +34,9 @@
 .p-20 {
   padding: 20px;
 }
+.pb-20 {
+  padding-bottom: 20px;
+}
 .m-10 {
   margin: 10px;
 }
@@ -44,6 +50,12 @@
 
 .mb-10 {
   margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-40 {
+  margin-bottom: 40px;
 }
 /* End Padding + Margin */
 /* Start Border */
@@ -65,3 +77,8 @@
   position: absolute;
 }
 /* End Position */
+/* Start Background */
+.bg-white {
+  background-color: #fff;
+}
+/* End Background */
