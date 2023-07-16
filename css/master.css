@@ -14,3 +14,45 @@ a {
 ul {
   list-style: none;
 }
+
+body {
+  background-color: #eee;
+}
+
+.sidebar {
+  background-color: #fff;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar > h3::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sidebar > h3::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: black;
+  border: 4px solid white;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -9px;
+}
+
+.sidebar ul li a {
+  transition: 0.3s;
+}
+.sidebar ul li a:hover {
+  background-color: #eee;
+}
