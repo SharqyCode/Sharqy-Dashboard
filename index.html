@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap"
       rel="stylesheet"
     />
     <title>Dashboard</title>
   </head>
-  <body class="bg-eee">
+  <body>
     <div class="page d-flex">
+      <!-- Start Sidebar -->
       <div class="sidebar bg-white p-20 p-relative">
         <h3 class="p-relative txt-c mb-40">Sharqy</h3>
         <ul>
@@ -81,24 +82,30 @@
           </li>
         </ul>
       </div>
+      <!-- End Sidebar -->
+      <!-- Start Content -->
+
       <div class="content w-full">
+        <!-- Start Head -->
         <div class="head between-flex bg-white p-15">
           <div class="search p-relative">
             <input
-              class="p-10 rad-10 ml-5"
-              type="text"
+              class="p-10 ml-5"
+              type="search"
               placeholder="Type A Keyword"
             />
           </div>
-          <div class="info between-flex">
+          <div class="info d-flex align-center">
             <span class="notifications p-relative p-10"
               ><i class="fa-regular fa-bell fa-lg"></i
             ></span>
-
             <img src="./images/5556468.png" alt="" />
           </div>
         </div>
+        <!-- End Head -->
+        <h1 class="p-relative">Dashboard</h1>
       </div>
+      <!-- End Content -->
     </div>
   </body>
 </html>
