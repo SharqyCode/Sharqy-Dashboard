@@ -2,5 +2,15 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
