@@ -239,3 +239,12 @@ ul {
 .welcome button {
   margin: 0px 20px 20px auto;
 }
+
+.quick-draft textarea {
+  resize: none;
+  height: 180px;
+}
+
+.quick-draft .button-shape {
+  margin: 0px 0px 0px auto;
+}
