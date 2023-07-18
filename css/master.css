@@ -38,7 +38,7 @@ ul {
 }
 
 .page {
-  min-height: 200vh;
+  min-height: 100vh;
   background-color: #f1f5f9;
 }
 
@@ -391,3 +391,20 @@ ul {
   width: 75%;
 }
 /* End Yearly Targets */
+
+/* Start Statisitcs */
+.statistics .scores {
+  flex-wrap: wrap;
+}
+
+.statistics .scores div {
+  border: 1px solid var(--grey-color);
+  width: calc(50% - 10px);
+}
+
+@media (max-width: 767px) {
+  .statistics .scores div {
+    width: 100%;
+  }
+}
+/* End Statisitcs */
