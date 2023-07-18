@@ -42,6 +42,7 @@ ul {
   background-color: #f1f5f9;
 }
 
+/* Start Sidebar */
 .sidebar {
   width: 250px;
   box-shadow: 0 0 10px #ddd;
@@ -104,7 +105,9 @@ ul {
     justify-content: center;
   }
 }
+/* Start Sidebar */
 
+/* Start Head */
 .head .search::before {
   font-family: var(--fa-style-family-classic);
   content: "\f002";
@@ -152,7 +155,9 @@ ul {
   width: 32px;
   border-radius: 50%;
 }
+/* End Head */
 
+/* Start Content */
 .content > h1 {
   margin: 20px 20px 40px;
 }
@@ -175,6 +180,7 @@ ul {
   background-color: black;
   width: 40px;
 }
+/* End Content */
 
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -188,6 +194,7 @@ ul {
   }
 }
 
+/* Start Welcome */
 .welcome {
   overflow: hidden;
 }
@@ -239,7 +246,9 @@ ul {
 .welcome button {
   margin: 0px 20px 20px auto;
 }
+/* End Welcome */
 
+/* Start Quick Draft */
 .quick-draft textarea {
   resize: none;
   height: 180px;
@@ -248,3 +257,137 @@ ul {
 .quick-draft .button-shape {
   margin: 0px 0px 0px auto;
 }
+/* Start Quick Draft */
+
+/* Start Yearly Targets */
+
+.yearly-targets .stat .block {
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yearly-targets .stat .block::before {
+  font-family: var(--fa-style-family-classic);
+}
+
+.yearly-targets .stat#money .block {
+  background-color: rgba(0, 119, 255, 0.2);
+}
+
+.yearly-targets .stat#money .block::before {
+  content: "\24";
+  color: var(--blue-color);
+}
+
+.yearly-targets .stat#projects .block {
+  background-color: rgba(255, 179, 0, 0.2);
+}
+.yearly-targets .stat#projects .block::before {
+  content: "\f121";
+  color: var(--orange-color);
+}
+
+.yearly-targets .stat#team .block {
+  background-color: rgba(0, 255, 21, 0.2);
+}
+
+.yearly-targets .stat#team .block::before {
+  content: "\f007";
+  color: var(--green-color);
+}
+
+.yearly-targets .stat .info {
+  flex: 1;
+}
+
+.yearly-targets .stat .info .value {
+  font-weight: bold;
+}
+
+.yearly-targets .stat .info .ratio {
+  height: 4px;
+}
+
+.yearly-targets .stat .info .ratio span {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.yearly-targets .stat .info .ratio span::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 5px solid;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  transform: translateX(50%);
+}
+
+.yearly-targets .stat#money .info .ratio span::before {
+  border-color: var(--blue-color) transparent transparent transparent;
+}
+.yearly-targets .stat#projects .info .ratio span::before {
+  border-color: var(--orange-color) transparent transparent transparent;
+}
+.yearly-targets .stat#team .info .ratio span::before {
+  border-color: var(--green-color) transparent transparent transparent;
+}
+
+.yearly-targets .stat .info .ratio span::after {
+  position: absolute;
+  color: white;
+  top: -30px;
+  right: 0;
+  transform: translateX(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 30px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.yearly-targets .stat#money .info .ratio span::after {
+  content: "80%";
+  background-color: var(--blue-color);
+}
+.yearly-targets .stat#projects .info .ratio span::after {
+  content: "55%";
+  background-color: var(--orange-color);
+}
+.yearly-targets .stat#team .info .ratio span::after {
+  content: "75%";
+  background-color: var(--green-color);
+}
+
+.yearly-targets .stat#money .info .ratio {
+  background-color: rgba(0, 119, 255, 0.2);
+}
+
+.yearly-targets .stat#money .info .ratio span {
+  width: 80%;
+}
+
+.yearly-targets .stat#projects .info .ratio {
+  background-color: rgba(255, 179, 0, 0.2);
+}
+
+.yearly-targets .stat#projects .info .ratio span {
+  width: 55%;
+}
+
+.yearly-targets .stat#team .info .ratio {
+  background-color: rgba(0, 255, 21, 0.2);
+}
+
+.yearly-targets .stat#team .info .ratio span {
+  width: 75%;
+}
+/* End Yearly Targets */

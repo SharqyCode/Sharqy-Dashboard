@@ -194,6 +194,11 @@
   justify-content: space-between;
   align-items: center;
 }
+.flex-c-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .button-shape {
   display: block;
   padding: 4px 10px;
