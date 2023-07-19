@@ -241,7 +241,11 @@
 .button-shape:hover {
   background-color: var(--blue-alt-color);
 }
-
+.common-widget {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
 @media (max-width: 767px) {
   .align-center-mobile {
     display: flex;
