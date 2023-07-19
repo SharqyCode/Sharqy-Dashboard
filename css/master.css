@@ -438,3 +438,29 @@ ul {
   }
 }
 /* End News */
+
+/* Start Tasks */
+.tasks .list .row:not(:last-of-type) {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.tasks .list .row .info {
+  flex-grow: 1;
+}
+
+.tasks .list .row i {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tasks .list .row i:hover {
+  color: var(--orange-color);
+}
+
+.tasks .checked {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+/* End Tasks */
