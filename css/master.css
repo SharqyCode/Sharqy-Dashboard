@@ -450,12 +450,12 @@ ul {
   flex-grow: 1;
 }
 
-.tasks .list .row i {
+.tasks .list .row .delete {
   transition: 0.3s;
   cursor: pointer;
 }
 
-.tasks .list .row i:hover {
+.tasks .list .row .delete:hover {
   color: var(--orange-color);
 }
 
@@ -464,3 +464,12 @@ ul {
   text-decoration: line-through;
 }
 /* End Tasks */
+
+/* Start Top-search */
+.top-search .list .row:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+.top-search .list .row .num {
+  padding: 4px 10px;
+}
+/* End Top-search */
