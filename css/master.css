@@ -190,7 +190,7 @@ ul {
 @media (max-width: 767px) {
   .wrapper {
     grid-template-columns: minmax(200px, 1fr);
-    margin: 0px 10px;
+    margin: 0px 10px 20px;
   }
 }
 
@@ -408,3 +408,26 @@ ul {
   }
 }
 /* End Statisitcs */
+
+/* Start News */
+.news .list .row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.news .list .row:first-child {
+  padding-top: 0;
+}
+
+.news .list .row:last-child {
+  border: none;
+  padding-bottom: 0px;
+}
+
+.news .list .row img {
+  width: 100px;
+}
+
+.news .list .row .time {
+  padding: 4px 10px;
+}
+/* End News */
