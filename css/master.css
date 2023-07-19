@@ -244,7 +244,13 @@ ul {
 }
 
 .welcome button {
+  background-color: var(--blue-color);
+  color: white;
   margin: 0px 20px 20px auto;
+}
+
+.welcome button:hover {
+  background-color: var(--blue-alt-color);
 }
 /* End Welcome */
 
@@ -254,8 +260,14 @@ ul {
   height: 180px;
 }
 
-.quick-draft .button-shape {
-  margin: 0px 0px 0px auto;
+.quick-draft button {
+  background-color: var(--blue-color);
+  color: white;
+  margin: 0px 20px 20px auto;
+}
+
+.quick-draft button:hover {
+  background-color: var(--blue-alt-color);
 }
 /* Start Quick Draft */
 
@@ -467,9 +479,23 @@ ul {
 
 /* Start Top-search */
 .top-search .list .row:not(:last-of-type) {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .top-search .list .row .num {
   padding: 4px 10px;
 }
 /* End Top-search */
+
+/* Start Uploads */
+.uploads .list .row:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.uploads .list .row .info {
+  flex-grow: 1;
+}
+.uploads .list .row img {
+  width: 40px;
+  height: 40px;
+}
+/* End Uploads */
