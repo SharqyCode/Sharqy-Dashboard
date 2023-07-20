@@ -529,6 +529,7 @@ ul {
 
 .latest-project .milestones p.done::after,
 .latest-project .milestones p.pending::after {
+  position: absolute;
   width: 16px;
   height: 16px;
 }
@@ -558,8 +559,20 @@ ul {
 .latest-project .rocket {
   width: 160px;
   height: 150px;
-  opacity: 0.3;
+  opacity: 0.1;
   right: 0;
   bottom: 0;
 }
 /* End Latest Project */
+
+/* Start Reminders */
+.reminders .list .info {
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
+.reminders .list .dot {
+  width: 15px;
+  height: 15px;
+}
+/* End Reminders */

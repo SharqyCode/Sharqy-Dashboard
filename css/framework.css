@@ -46,6 +46,12 @@
 
 /* End Box */
 /* Start Font */
+.fs-10 {
+  font-size: 10px;
+}
+.fs-12 {
+  font-size: 12px;
+}
 .fs-14 {
   font-size: 14px;
 }
@@ -97,6 +103,12 @@
 }
 .pb-30 {
   padding-bottom: 30px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pl-20 {
+  padding-left: 20px;
 }
 
 .m-5 {
@@ -219,6 +231,24 @@
 }
 .bg-eee {
   background-color: #eee;
+}
+.br-red {
+  border-color: var(--red-color);
+}
+.br-green {
+  border-color: var(--green-color);
+}
+.br-blue {
+  border-color: var(--blue-color);
+}
+.br-orange {
+  border-color: var(--orange-color);
+}
+.br-white {
+  border-color: white;
+}
+.br-eee {
+  border-color: #eee;
 }
 /* Start Components */
 .space-between {
