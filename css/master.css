@@ -499,3 +499,67 @@ ul {
   height: 40px;
 }
 /* End Uploads */
+
+/* Start Latest Project */
+.latest-project .milestones {
+  border-left: 2px solid var(--blue-color);
+}
+.latest-project .milestones p {
+  position: relative;
+  padding-left: 25px;
+}
+.latest-project .milestones p:not(:last-child) {
+  margin-bottom: 25px;
+}
+.latest-project .milestones p::before,
+.latest-project .milestones p::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.latest-project .milestones p::before {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid var(--blue-color);
+}
+
+.latest-project .milestones p.done::after,
+.latest-project .milestones p.pending::after {
+  width: 16px;
+  height: 16px;
+}
+
+.latest-project .milestones p.done::after {
+  background-color: var(--blue-color);
+}
+
+.latest-project .milestones p.pending::after {
+  background-color: #fff;
+  animation-name: toggle;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes toggle {
+  0% {
+    background-color: #fff;
+  }
+  40% {
+    background-color: var(--blue-color);
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+.latest-project .rocket {
+  width: 160px;
+  height: 150px;
+  opacity: 0.3;
+  right: 0;
+  bottom: 0;
+}
+/* End Latest Project */
