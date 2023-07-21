@@ -590,3 +590,54 @@ ul {
   line-height: 2;
 }
 /* End  Post */
+
+/* Start Social Media*/
+.social-media .links .row {
+  flex-grow: 1;
+}
+
+.social-media .links .row .box {
+  width: 56px;
+  height: 56px;
+  display: flex;
+}
+
+.social-media .links .row .info p {
+  flex-grow: 1;
+}
+
+.social-media .links .row.twitter {
+  background-color: rgb(29 161 242 / 20%);
+  color: #1da1f2;
+}
+.social-media .links .row.facebook {
+  background-color: rgb(24 119 242 / 20%);
+  color: #1da1f2;
+}
+.social-media .links .row.youtube {
+  background-color: rgb(255 0 0 / 20%);
+  color: #ff0000;
+}
+.social-media .links .row.linkedin {
+  background-color: rgb(0 119 181 / 20%);
+  color: #0077b5;
+}
+
+.social-media .links .row.twitter .box,
+.social-media .links .row.twitter a {
+  background-color: #1da1f2;
+}
+.social-media .links .row.facebook .box,
+.social-media .links .row.facebook a {
+  background-color: #1877f2;
+}
+.social-media .links .row.youtube .box,
+.social-media .links .row.youtube a {
+  background-color: #ff0000;
+}
+.social-media .links .row.linkedin .box,
+.social-media .links .row.linkedin a {
+  background-color: #0077b5;
+}
+
+/* End Social Media*/

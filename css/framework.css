@@ -31,6 +31,12 @@
 .w-fit {
   width: fit-content;
 }
+.h-full {
+  height: 100%;
+}
+.h-fit {
+  height: fit-content;
+}
 
 @media (max-width: 767px) {
   .hide-mobile {
@@ -86,6 +92,9 @@
 }
 .p-20 {
   padding: 20px;
+}
+.p-40 {
+  padding: 40px;
 }
 
 .pt-10 {
