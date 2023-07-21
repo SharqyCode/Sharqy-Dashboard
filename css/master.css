@@ -645,10 +645,13 @@ ul {
 /* End Social Media*/
 
 /* Start projects table */
+.projects .responsive-table {
+  overflow-x: scroll;
+}
+
 .projects table {
   min-width: 1000px;
   border-spacing: 0px;
-  overflow-x: auto;
 }
 .projects table th {
   text-align: start;
