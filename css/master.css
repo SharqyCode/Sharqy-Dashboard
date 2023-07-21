@@ -576,3 +576,17 @@ ul {
   height: 15px;
 }
 /* End Reminders */
+/* Start  Post */
+.post .content .head img {
+  width: 48px;
+  height: 48px;
+}
+
+.post .content .head,
+.post .content .body {
+  border-bottom: 1px solid #eee;
+}
+.post .content .body {
+  line-height: 2;
+}
+/* End  Post */
