@@ -36,6 +36,9 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--blue-alt-color);
 }
+.content {
+  overflow: hidden;
+}
 
 .page {
   min-height: 100vh;
@@ -599,7 +602,6 @@ ul {
 .social-media .links .row .box {
   width: 56px;
   height: 56px;
-  display: flex;
 }
 
 .social-media .links .row .info p {
@@ -641,3 +643,41 @@ ul {
 }
 
 /* End Social Media*/
+
+/* Start projects table */
+.projects table {
+  min-width: 1000px;
+  border-spacing: 0px;
+  overflow-x: auto;
+}
+.projects table th {
+  text-align: start;
+  padding: 15px;
+  background-color: #eee;
+}
+.projects table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.projects table tr:hover td {
+  background-color: #faf7f7;
+}
+
+.projects table td:last-child {
+  border-right: 1px solid #eee;
+}
+
+.projects table td img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 2px;
+}
+
+.projects table td img:not(:first-child) {
+  margin-left: -20px;
+}
