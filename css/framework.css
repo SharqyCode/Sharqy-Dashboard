@@ -10,6 +10,9 @@
 .d-flex {
   display: flex;
 }
+.d-grid {
+  display: grid;
+}
 .f-col {
   flex-direction: column;
 }
