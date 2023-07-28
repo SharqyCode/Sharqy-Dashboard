@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./icons/work.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./icons/favicons/Settings.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/framework.css" />
     <link rel="stylesheet" href="./css/master.css" />
@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <title>Dashboard</title>
+    <title>Settings</title>
   </head>
   <body>
     <div class="page d-flex">
@@ -105,6 +105,7 @@
         <!-- End Head -->
         <h1 class="p-relative">Settings</h1>
         <div class="settings-page d-grid gap-20 m-20">
+          <!-- Start Site Control -->
             <div class="site-control common-widget">
               <div class="widget-header">
                 <h2 class="widget-header__title">Site Control</h2>
@@ -124,6 +125,28 @@
               </div>
               <textarea class="site-control__message" placeholder="Close Message Content"></textarea>
             </div>
+          <!-- End Site Control -->
+          <div class="general-info common-widget">
+            <div class="widget-header">
+              <h2 class="widget-header__title">General Info</h2>
+              <p class="widget-header__subtitle">General Information About Your Account</p>
+            </div>
+            <form class="account-info mt-20" action="">
+              <div class="account-attribute">
+                <label class="account-attribute__label">First Name</label>
+                <input class="account-attribute__input" type="text" placeholder="First Name">
+              </div>
+              <div class="account-attribute">
+                <label class="account-attribute__label">Last Name</label>
+                <input class="account-attribute__input" type="text" placeholder="Last Name">
+              </div>
+              <div class="account-attribute">
+                <label class="account-attribute__label">Email</label>
+                <input class="account-attribute__input email" type="text" placeholder="Email" value="ebraheemelsharkawy2002@gmail.com" disabled>
+                <button class="button-shape c-blue bg-tp">Change</button>
+              </div>
+            </form>
+          </div>
         </div>
       <!-- End Content -->
     </div>

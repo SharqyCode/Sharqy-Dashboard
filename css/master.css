@@ -695,15 +695,71 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
+@media (max-width: 767px) {
+  .settings-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-gap: 10px;
+  }
+}
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.setting-info__desc {
+  font-size: 13px;
+  color: var(--grey-color);
+  margin-top: 5px;
+}
+
 /* Start Site Control */
 .site-control__message {
+  display: block;
   resize: none;
   width: 100%;
-  height: 150px;
+  min-height: 150px;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 10px;
   color: var(--grey-color);
 }
 /* End Site Control */
+
+/* Start General Info */
+.account-attribute {
+  margin-top: 15px;
+}
+
+.account-attribute__label {
+  display: block;
+  color: var(--grey-color);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.account-attribute__input {
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.account-attribute__input:disabled {
+  color: var(--grey-color);
+}
+
+.account-attribute .button-shape {
+  font-size: 16px;
+  display: inline;
+}
+
+.account-attribute__input.email {
+  width: calc(100% - 82px);
+}
+/* End General Info */
 /* End Settings */

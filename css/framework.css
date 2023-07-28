@@ -10,9 +10,6 @@
 .d-flex {
   display: flex;
 }
-.d-grid {
-  display: grid;
-}
 .f-col {
   flex-direction: column;
 }
@@ -247,6 +244,9 @@
 .bg-eee {
   background-color: #eee;
 }
+.bg-tp {
+  background-color: transparent;
+}
 .br-red {
   border-color: var(--red-color);
 }
@@ -294,6 +294,7 @@
   border-radius: 6px;
   font-size: 14px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .common-widget {
@@ -350,19 +351,6 @@
   color: var(--blue-alt-color);
   content: "\f00c";
   transform: rotate(360deg);
-}
-
-.setting {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 0px;
-}
-
-.setting-info__desc {
-  font-size: 13px;
-  color: var(--grey-color);
-  margin-top: 5px;
 }
 
 @media (max-width: 767px) {
