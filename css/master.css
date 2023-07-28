@@ -764,12 +764,15 @@ ul {
 /* End General Info */
 /* Start Security Info */
 .security-info .setting {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .security-info .setting:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+
+.security-info .setting:last-child {
+  margin-bottom: 0px;
 }
 /* End Security Info */
 /* End Settings */
