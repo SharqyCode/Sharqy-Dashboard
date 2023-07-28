@@ -105,7 +105,25 @@
         <!-- End Head -->
         <h1 class="p-relative">Settings</h1>
         <div class="settings-page d-grid gap-20 m-20">
-            <div class="site-control"></div>
+            <div class="site-control common-widget">
+              <div class="widget-header">
+                <h2 class="widget-header__title">Site Control</h2>
+                <p class="widget-header__subtitle">Control The Website If There Is Maintenance</p>
+              </div>
+              <div class="setting">
+                <div class="setting-info">
+                  <p class="setting-info__name">Website Control</p>
+                  <p class="setting-info__desc">Open/Close Website And Type The Reason</p>
+                </div>
+                <div class="setting-control">
+                  <label class="control-label" for="control">
+                    <input type="checkbox" id="control">
+                    <div class="settings-switch"></div>
+                  </label>
+                </div>
+              </div>
+              <textarea class="site-control__message" placeholder="Close Message Content"></textarea>
+            </div>
         </div>
       <!-- End Content -->
     </div>
