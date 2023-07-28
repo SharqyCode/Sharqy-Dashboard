@@ -775,4 +775,30 @@ ul {
   margin-bottom: 0px;
 }
 /* End Security Info */
+/* Start Social Info */
+.socials li i {
+  border-right: 1px solid #ccc;
+  height: 100%;
+  width: 40px;
+  transition: 0.3s;
+}
+.socials li i.face:hover {
+  color: #3360ff;
+}
+.socials li i.twit:hover {
+  color: #326ada;
+}
+.socials li i.linkd:hover {
+  color: #0077b5;
+}
+.socials li i.yt:hover {
+  color: #cc181e;
+}
+.socials li input {
+  border: 1px solid #ccc;
+}
+.socials li input:disabled {
+  color: var(--grey-color);
+}
+/* End Social Info */
 /* End Settings */
