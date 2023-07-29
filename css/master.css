@@ -801,4 +801,113 @@ ul {
   color: var(--grey-color);
 }
 /* End Social Info */
+/* Start Widgets Control */
+.options {
+  margin-top: 20px;
+}
+.options li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.options li input {
+  appearance: none;
+}
+.options li label {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.options li label::before,
+.options li label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--grey-color);
+  border-radius: 4px;
+}
+
+.options li label::after {
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform: scale(0);
+}
+
+.options li label:hover::before {
+  border-color: var(--blue-color);
+}
+
+.options li input:checked + label::after {
+  transform: scale(1) rotate(360deg);
+}
+/* End Widgets Control */
+/* Start Backup Manager */
+.backup-time input {
+  appearance: none;
+}
+
+.backup-time li label::before,
+.backup-time li label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--grey-color);
+  border-radius: 50%;
+}
+
+.backup-time li label:hover::before {
+  border-color: var(--blue-color);
+}
+
+.backup-time li label::after {
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+  transition: 0.3s;
+  transform: scale(0);
+}
+
+.backup-time li label:has(input:checked)::after {
+  transform: scale(0.5);
+}
+
+.locations {
+  border-top: 1px solid #eee;
+  gap: 5px;
+}
+
+@media (max-width: 767px) {
+  .locations {
+    flex-direction: column;
+  }
+}
+
+.locations input {
+  appearance: none;
+}
+
+.locations input:checked + .server {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+.locations .server {
+  border: 2px solid #eee;
+}
+/* End Backup Manager */
 /* End Settings */
