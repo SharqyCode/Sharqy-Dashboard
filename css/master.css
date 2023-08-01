@@ -1018,14 +1018,76 @@ ul {
   .entry img {
     margin: 0px auto 10px;
   }
-
   .entry .info {
     margin: 0px;
   }
-
   .entry .time {
     margin-top: 10px;
   }
 }
 /* End Latest acts */
 /* End Profile */
+
+/* Start Projects */
+.projects {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.card .date-added {
+  right: 10px;
+  top: 10px;
+}
+
+.card .team {
+  border-bottom: 1px solid #eee;
+}
+
+.card .team img {
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.card .team img:not(:first-of-type) {
+  margin-left: -10px;
+}
+
+.card .team img:hover {
+  z-index: 10;
+}
+
+.card .skills-needed {
+  justify-content: end;
+  border-bottom: 1px solid #eee;
+}
+
+.card .status .progress {
+  width: 250px;
+  height: 10px;
+}
+
+.card .status .progress .percentage {
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .projects {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+  .card .skills-needed span {
+    margin-bottom: 15px;
+  }
+  .card .status .progress {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .card .status .progress {
+    width: 180px;
+  }
+}
+
+/* End Projects */
