@@ -983,6 +983,35 @@ ul {
     margin: auto;
   }
 }
-
 /* End Overview */
+
+/* Start My Skills */
+.my-skills {
+  flex-grow: 1;
+}
+.skills .skill-row:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+/* End My Skills */
+
+/* Start Latest acts */
+.latest-activities {
+  flex-grow: 2;
+}
+
+.entry:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.entry img {
+  width: 64px;
+  aspect-ratio: 1/1;
+}
+
+.entry .info {
+  flex-grow: 1;
+}
+/* End Latest acts */
 /* End Profile */
