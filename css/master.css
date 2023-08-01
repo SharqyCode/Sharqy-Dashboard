@@ -1013,5 +1013,19 @@ ul {
 .entry .info {
   flex-grow: 1;
 }
+
+@media (max-width: 767px) {
+  .entry img {
+    margin: 0px auto 10px;
+  }
+
+  .entry .info {
+    margin: 0px;
+  }
+
+  .entry .time {
+    margin-top: 10px;
+  }
+}
 /* End Latest acts */
 /* End Profile */
