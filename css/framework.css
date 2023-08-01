@@ -31,6 +31,9 @@
 .w-fit {
   width: fit-content;
 }
+.w-1fr {
+  width: 1fr;
+}
 .h-full {
   height: 100%;
 }
@@ -53,22 +56,22 @@
 /* End Box */
 /* Start Font */
 .fs-10 {
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 .fs-12 {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .fs-14 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .fs-16 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .fs-18 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .fs-24 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .txt-c {
   text-align: center;
@@ -153,6 +156,9 @@
 }
 .mt-10 {
   margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
 }
 .mt-20 {
   margin-top: 20px;
@@ -313,7 +319,7 @@
   display: block;
   padding: 4px 10px;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 0.875rem;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -326,42 +332,39 @@
 
 .widget-header__subtitle {
   color: var(--grey-color);
-  font-size: 15px;
+  font-size: 0.9375rem;
   margin-top: 10px;
 }
 
-.control-label {
-  height: fit-content;
-  position: relative;
-}
 .control-label input {
+  -webkit-appearance: none;
   appearance: none;
-  position: absolute;
+  display: none;
 }
 .settings-switch {
   background-color: #ccc;
   width: 78px;
   height: 32px;
-  border-radius: 30px;
+  border-radius: 16px;
   position: relative;
   transition: 0.3s;
   cursor: pointer;
 }
 .settings-switch::before {
-  position: absolute;
-  left: 4px;
-  top: 4px;
-  border-radius: 50%;
-  color: #ccc;
-  background-color: white;
   font-family: var(--fa-style-family-classic);
   content: "\f00d";
   font-weight: 900;
-  height: 24px;
+  background-color: white;
   width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  color: #aaa;
   transition: 0.3s;
 }
 .control-label input:checked + .settings-switch {
@@ -380,4 +383,5 @@
     align-items: center;
   }
 }
+
 /* End Components */
