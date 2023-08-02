@@ -1189,3 +1189,62 @@ h {
   border-bottom: 1px solid #eee;
 }
 /* End Friends */
+
+/* Start Files */
+
+.files-grid {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  flex-grow: 1;
+}
+
+.card img {
+  width: 64px;
+  aspect-ratio: 1/1;
+}
+
+.card .data {
+  border-top: 1px solid #eee;
+}
+
+.file-stats {
+  width: 260px;
+  height: fit-content;
+}
+
+.file-stats ul li {
+  border: 1px solid #eee;
+}
+
+.file-stats ul li .icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.file-stats ul li i.blue {
+  background-color: rgb(0 117 255 / 20%);
+  color: var(--blue-color);
+}
+.file-stats ul li .info {
+  flex-grow: 1;
+}
+
+.file-stats button {
+  padding: 10px 15px;
+  margin: 0px auto;
+}
+
+@media (max-width: 767px) {
+  .files-page {
+    flex-direction: column-reverse;
+  }
+  .file-stats {
+    width: 100%;
+  }
+  .files-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    flex-grow: 1;
+  }
+}
+/* End Files */
