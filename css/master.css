@@ -1148,6 +1148,14 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
+h {
+  content: "(" counter(friends) ")";
+}
+
+.friend {
+  counter-increment: friends;
+}
+
 .friend .contact {
   left: 10px;
   top: 10px;
