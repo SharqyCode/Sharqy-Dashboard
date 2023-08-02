@@ -967,7 +967,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .stats {
+  .overview .stats {
     border-right: 1px solid #eee;
   }
 }
@@ -1091,3 +1091,93 @@ ul {
 }
 
 /* End Projects */
+
+/* Start Courses */
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.course {
+  overflow: hidden;
+}
+
+.course .course__instructor {
+  border: 2px solid white;
+  width: 64px;
+  aspect-ratio: 1/1;
+  top: 20px;
+  left: 20px;
+}
+
+.course-info {
+  border-bottom: 1px solid #eee;
+}
+
+.course-info p {
+  line-height: 1.5;
+  height: 75px;
+  overflow: hidden;
+}
+
+.course-info::after {
+  content: "Course Info";
+  border-radius: 6px;
+  background-color: var(--blue-color);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 13px;
+  padding: 4px 10px;
+}
+
+@media (max-width: 380px) {
+  .courses-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin: 10px;
+  }
+  html {
+    font-size: 0.8rem;
+  }
+}
+/* End Courses */
+
+/* Start Friends */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.friend .contact {
+  left: 10px;
+  top: 10px;
+}
+
+.friend .contact i {
+  width: 33px;
+  height: 33px;
+  background-color: #eee;
+  color: #555;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.friend .contact i:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.friend .header img {
+  width: 100px;
+  aspect-ratio: 1/1;
+}
+
+.friend .stats {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+/* End Friends */
