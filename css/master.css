@@ -1262,3 +1262,45 @@ h {
   }
 }
 /* End Files */
+
+/* Start Plans */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.plan .plan-header-border {
+  padding: 3px;
+  background-color: white;
+  border: 3px solid;
+}
+
+.plan.green .plan-header-border {
+  border-color: var(--green-color);
+}
+.plan.blue .plan-header-border {
+  border-color: var(--blue-color);
+}
+.plan.orange .plan-header-border {
+  border-color: var(--orange-color);
+}
+
+.plan .plan-header .price::before {
+  content: "$";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-size: 24px;
+}
+
+.plan ul li {
+  border-bottom: 1px solid #eee;
+}
+
+.plan ul li i.yes {
+  color: var(--green-color);
+}
+.plan ul li i.no {
+  color: var(--red-color);
+}
+
+/* End Plans */
